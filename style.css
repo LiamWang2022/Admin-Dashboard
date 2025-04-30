@@ -22,19 +22,42 @@ html, body {
 
 a {
     text-decoration: none;
-
-}
-a:visited{
     color: black;
-}
-.nav a:visited{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:active {
+    color: black;
+  }
+  
+  a:focus {
+    color: black;
+    outline: none;
+  }
+  
+  .nav a,
+  .nav a:visited,
+  .nav a:active,
+  .nav a:focus {
     color: white;
-}
-
-.nav a:hover{
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  .nav a:hover {
+    color: white;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     border-radius: 5%;
-}
+  }
+  
 
 .nav {
     grid-column: 1/2;
